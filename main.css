@@ -1,0 +1,154 @@
+body,
+html,
+canvas {
+  overflow: hidden;
+  background-color: #000;
+  color: #011627;
+  margin: 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#league {
+  width: 100%;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+#teams {
+  width: 100%;
+  font-size: 16px;
+  transform: translateZ(15px);
+}
+
+#score {
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 52px;
+  transform: translateZ(50px);
+  font-weight: 600;
+  font-style: italic;
+  background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#score span {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+#details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  height: 16px;
+}
+
+#details p {
+  width: fit-content;
+  margin-right: 8px;
+}
+
+#odds {
+  padding-top: 12px;
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  border-radius: 8px;
+  overflow: hidden;
+  /*border: 1px solid red;*/
+  height: 48px;
+  transform: translateZ(15px);
+}
+
+.odd {
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.odd:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.card-wrapper {
+  position: absolute;
+  width: 363px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 400px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  background-color: #07051B;
+  border-radius: 16px;
+}
+
+#glow {
+  box-sizing: border-box;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("/glow.svg");
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.club {
+  background-color: white;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+}
+
+.match {
+  padding-top: 12px;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  perspective: 400px;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 1px solid rebeccapurple;*/
+}
+
+.match * {
+  /*border: 1px solid red;*/
+  margin: 0;
+}
