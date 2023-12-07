@@ -118,7 +118,7 @@ ul {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  background-image: url("/glow.svg");
+  background-image: url("glow.svg");
   background-size: cover;
   overflow: hidden;
   border-radius: 16px;
